@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- heading deyao hoye6e -->
+    <h1>Stone Paper Scissors Game</h1>
+
+    <!-- choices gulo/images gulo USER ke visually dekhate hobe, tai amra "choices" name er class baniye6i -->
+    <div class="choices">
+
+         <!-- choice ke uniquely identify korar jonno; ortath pore amader ke track korte hobe je; amra "stone" er upor click kore6i, na ki "paper" er upor click kore6i, na ki "scissors" er upor click kore6i....ei jonno amra protek choice er id define kore6i -->
+        <!-- 1st choice -->
+        <div class="choice" id="stone">
+            <img src="https://goodday451999.github.io/Rock-Paper-Scissors-Neo/images/stone.png">
+        </div>
+
+        <!-- 2nd choice -->
+        <div class="choice" id="paper">
+            <img src="https://sihoonathan.github.io/rock-paper-scissors/assets/img/paper2.png">
+        </div>
+
+        <!-- 3rd choice -->
+        <div class="choice" id="scissors">
+            <img src="https://goodday451999.github.io/Rock-Paper-Scissors-Neo/images/scissors.png">
+        </div>
+
+    </div>
+
+    <!-- score ke print korar jonno amader ka6e score-board thaka uchit -->
+    <div class="score-board">
+
+        <!-- USER er score show hobe -->
+        <div class="score">
+            <!-- je score a6e; ortath 0, eta update hote thakbe. to eta emon value/paragraph je update hote thakbe; update hobe tai pore JAVASCRIPT file e access korte hobe, tai amra id/class dite pari(ekhane amra id pass kore6i)-->
+            <p id="user-score">0</p>
+            <p>You</p>
+        </div>
+
+        <!-- COMPUTER er score show hobe -->
+        <div class="score">
+            <!-- je score a6e; ortath 0, eta update hote thakbe. to eta emon value/paragraph je update hote thakbe; update hobe tai pore JAVASCRIPT file e access korte hobe, tai amra id/class dite pari(ekhane amra id pass kore6i)-->
+            <p id="comp-score">0</p>
+            <p>Comp</p>
+        </div>
+
+    </div>
+
+    <!-- msg-container thaka uchit; jar dara amra bhujte parbo je Game 'Draw' ho66e, na ki amra 'Win' ho66i, kimba current je turn chol6e sekhane ki result as6e -->
+    <div class="msg-container">
+        <!-- ekhane amra some msg likhe6i -->
+        <p id="msg">Play Your Move</p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* *(asterisk); Universal Selector */
+*{ /* sob element */
+
+    margin: 0; /*bairer fakha jaiga remove*/
+    padding: 0; /*vetorer fakha jaiga remove*/
+    text-align: center; /*puro document ke/puro website e thaka sob text center hoye jabe*/
+
+    background-color: burlywood;
+}
+
+h1{
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+
+    /* line-height = line er height/line er majhe gap */
+    /*line-height er kaj holo akadik line er text hole line gulor moddhe vertical(Up->Down)distance contrl kore*/
+    line-height: 5rem; /*vertically ki6uta center e anar akta tricks; ortath jotota height a6e,totota line-height diye debo 'text' ke...jehetu height a6e 5rem; tai line-height deyao hoye6e 5rem...er fole 'text' vertcally 5rem center e asbe*/
+}
+
+
+.choice{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+
+    /* img er background e je div a6e, seta completely center korar jonno display:flex, justify-content, align=items...property guloke use kora hoye6e */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover{
+
+    /* jokhon e amra cursor ke kono img e niye jabo, tar basis e cursor ta ponter e convert hobe; according to img */
+
+    cursor: pointer;
+
+    background-color: #081b31;
+}
+
+/* jokhon e kono choice er upor cursor niye jabo tokhon e 'opacity' r jonno img ta blur hoye jabe
+.choice:hover{
+    opacity: 0.5; /*opacity:0.5; er ortho holo opacity half hoye jabe/*
+} */
+
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%; /*image gulo ke round shape e korar jonno*/
+}
+
+/* sokol img/choice er div container holo choices */
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#user-score, #comp-score{
+    font-size: 4rem;
+}
+
+.msg-container{
+    margin-top: 5rem;
+}
+
+#msg{
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline; /*er kaj holo element aki line e thake and jotota content a6e totota jaiga nei...ortath content onujayi 'width' nei*/
+
+    padding: 1rem;
+    border-radius: 1rem;
+    
+}
